@@ -1,0 +1,17 @@
+{
+	"name": "react-express-template",
+	"version": "1.0.0",
+	"description": "This template provides a fast way to start creating new apps with React and Express.",
+	"main": "index.js",
+	"scripts": {
+		"start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+		"server": "cd server && npm i && node --watch index.js",
+		"client": "cd client && npm i && npm run dev"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^8.2.2"
+	}
+}
