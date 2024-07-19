@@ -1,10 +1,10 @@
 // The homepage of the app
-import {Box, Container, Typography, Button} from '@mui/material';
+import { Box, Container, Typography, Button } from '@mui/material';
 
 export default function Home() {
 	// Request data from the server
 	const requestData = async () => {
-		const data = await fetch('http://localhost:8000');
+		const data = await fetch(`http://localhost:${8080}`);
 		const json = await data.json();
 		console.log(json);
 	};
